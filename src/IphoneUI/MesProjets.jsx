@@ -221,7 +221,10 @@ const MesProjets = () => {
                     Ce portfolio est développée avec React, Three.js et
                     Tailwind, mettant en avant mes compétences et projets.
                   </p>
-                  <a href="#" target="_blank">
+                  <a
+                    href="https://github.com/AMSTAGU/Iphone-Portfolio"
+                    target="_blank"
+                  >
                     <div className="ps-4 ms-2 py-[2px] mt-1 rounded-[5px] text-white text-[9px] font-semibold bg-[#1A98FF] cursor-pointer">
                       Voir le projet ↗
                     </div>
