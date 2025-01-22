@@ -27,5 +27,6 @@ dist-ssr
 .env
 .env.local
 
-# Ignore le fichier de déploiement
+# Ignore les fichiers de déploiement
+portfolio.zip
 deploy.sh

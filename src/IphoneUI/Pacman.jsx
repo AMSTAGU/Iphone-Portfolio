@@ -11,7 +11,7 @@ const Pacman = () => {
         })}
       </div>
       <img
-        src="/img/network-wifi-battery-light.jpeg"
+        src="/img/network-wifi-battery-light.png"
         alt="wifi"
         width={60}
         height={60}

@@ -25,7 +25,7 @@ const AboutMe = () => {
         <div className="flex flex-row gap-[10px] ps-2">
           <img
             className="rounded-[30px]  left-3"
-            src="/img/Amaury.jpeg"
+            src="/img/Amaury.png"
             alt="Amaury"
             width={110}
           />
