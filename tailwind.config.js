@@ -6,7 +6,11 @@ export default {
       fontFamily: {
         outfit: ["Outfit", "sans-serif"],
       },
+      boxShadow: {
+        custom: "0 4px 6px rgba(0, 0, 0, 0.1), 0 3px 100px rgba(0, 0, 0, 0)",
+      },
     },
   },
-  plugins: [],
+  // eslint-disable-next-line no-undef
+  plugins: [require("tailwind-scrollbar")],
 };

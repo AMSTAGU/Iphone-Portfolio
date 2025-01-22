@@ -13,7 +13,7 @@ const Google = () => {
     }
   };
   return (
-    <div className="h-[750px] w-full bg-white rounded-[38px]">
+    <div className="h-full w-full bg-white rounded-[38px]">
       <div className="absolute top-4 left-7 text-xs font-bold z-50">
         {new Date().toLocaleTimeString([], {
           hour: "2-digit",
@@ -28,17 +28,16 @@ const Google = () => {
         className="top-[15px] right-[20px] absolute z-50"
       />
 
-      <div className=" absolute top-48 left-6">
+      <div className="pt-[210px] flex items-center flex-col relative">
         <img
           src="/img/Google-Logo.png"
           alt="Google"
           width={150}
-          className="ml-8"
+          className="mb-4"
         />
         <input
           type="text"
-          className="absolute mt-4 px-5 py-[1px] border-2 rounded-full"
-          style={{ textIndent: "10px" }}
+          className="indent-8 rounded-full w-4/5 ring-slate-200 ring-2 shadow-custom"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onKeyDown={handleKeyDown}
@@ -46,13 +45,13 @@ const Google = () => {
         <img
           src="/svg/Search.svg"
           alt="mic"
-          className="absolute mt-[23px] left-2 opacity-30"
+          className="opacity-30 absolute mt-[73px] left-10"
           width={15}
         />
         <img
           src="/img/google-lens.png"
           alt="lens"
-          className="absolute mt-[23px] left-48"
+          className="absolute mt-[72px] right-10"
           width={15}
         />
       </div>

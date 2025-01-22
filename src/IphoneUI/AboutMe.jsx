@@ -5,7 +5,7 @@ const AboutMe = () => {
   const [isResume, setResume] = useState(true);
 
   return (
-    <div className="h-full w-full bg-white rounded-[38px] flex flex-col pt-14">
+    <div className="h-full w-full bg-white flex flex-col pt-14">
       <div className="absolute top-4 left-7 text-xs font-bold">
         {new Date().toLocaleTimeString([], {
           hour: "2-digit",
@@ -152,7 +152,7 @@ const AboutMe = () => {
                 <div className="ml-8 mt-4 px-[3px] py-24 bg-zinc-300 rounded-full" />
                 <div className="px-[7px] py-[7px] bg-zinc-300 rounded-full absolute left-[28px] bottom-11" />
                 <div className="px-[7px] py-[7px] bg-zinc-300 rounded-full absolute left-[28px] bottom-[100px]" />
-                <div className="px-[5px] py-[5px] bg-zinc-300 border-[2px] border-[#1A98FF] rounded-full absolute left-[28px] bottom-[160px]" />
+                <div className="px-[5px] py-[5px] bg-zinc-300 ring-[3px] ring-[#1A98FF] rounded-full absolute left-[30px] bottom-[162px]" />
                 <div className="px-[7px] py-[7px] bg-zinc-300 rounded-full absolute left-[28px] bottom-48" />
               </div>
               <div className="text-[11px] font-thin flex flex-col ps-4">

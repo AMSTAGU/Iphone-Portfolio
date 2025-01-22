@@ -119,7 +119,7 @@ export function Iphone({ props, open }) {
       >
         <Html position={[0, 0, 0.4]} transform>
           <div
-            className={`rounded-[38px] h-[565px] w-[263px] overflow-y-auto ${
+            className={`rounded-[38px] h-[565px] w-[263px] overflow-y-auto scrollbar-none ${
               open ? "" : "select-none"
             }`}
           >

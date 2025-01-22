@@ -39,7 +39,7 @@ const Mail = () => {
   }
 
   return (
-    <div className="h-full w-full bg-white rounded-[38px]">
+    <div className="h-full w-full bg-white">
       <div className="absolute top-4 left-7 text-xs font-bold z-50">
         {new Date().toLocaleTimeString([], {
           hour: "2-digit",
@@ -92,7 +92,7 @@ const Mail = () => {
         )}
       </AnimatePresence>
 
-      <div className="absolute mt-16 w-full px-1 py-7 bg-white rounded-full border-t-2 border-black opacity-10 z-10" />
+      <div className="absolute mt-16 w-full px-1 py-7 bg-white rounded-full shadow-custom z-00 rotate-180" />
 
       <form onSubmit={onSubmit}>
         <div className=" absolute left-3 top-24 font-extrabold text-[21.5px]">
@@ -102,21 +102,21 @@ const Mail = () => {
           <img
             src="/svg/Arrow-up.svg"
             alt="envoyer"
-            className="bg-[#1A98FF] rounded-full w-6 absolute top-[101px] right-4 cursor-pointer border-[3px] border-[#1A98FF] z-50 hover:scale-110 duration-300"
+            className="bg-[#1A98FF] rounded-full w-6 absolute top-[101px] right-4 cursor-pointer ring-[1px] ring-[#1A98FF] z-50 hover:scale-110 duration-300"
           />
         </button>
-        <div className="flex flex-col pt-36 ps-3">
+        <div className="flex flex-col pt-36 ps-3 w-full">
           <div className="font-semibold text-[13px] opacity-50">
             À : amaurygau@outlouk.fr
           </div>
           <div className="absolute bg-black mt-7 px-[120px] py-[0.5px] opacity-25" />
           <div className="flex text-[13px] pt-4">
-            <p className="font-semibold">De :</p>
+            <p className="font-semibold bg">De :</p>
             <input
               type="email"
               name="email"
               required
-              className="font-medium px-1 focus:outline-none pr-14"
+              className="font-medium px-1 focus:outline-none pr-14 w-4/5"
             />
             <div className="absolute bg-black mt-7 px-[120px] py-[0.5px] opacity-25" />
           </div>
@@ -126,7 +126,7 @@ const Mail = () => {
               type="text"
               name="Objet"
               required
-              className="font-medium px-1 focus:outline-none pr-10"
+              className="font-medium px-1 focus:outline-none pr-10 w-4/5"
             />
             <div className="absolute bg-black mt-7 px-[120px] py-[0.5px] opacity-10" />
           </div>

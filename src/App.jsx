@@ -21,7 +21,7 @@ function Model({ open, ...props }) {
     );
     group.current.rotation.y = THREE.MathUtils.lerp(
       group.current.rotation.y,
-      open ? 0.25 : Math.sin(t / 10) / 10,
+      open ? 0.255 : Math.sin(t / 10) / 10,
       0.01
     );
     group.current.rotation.z = THREE.MathUtils.lerp(

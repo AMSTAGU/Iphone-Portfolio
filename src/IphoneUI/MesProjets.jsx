@@ -21,7 +21,7 @@ const MesProjets = () => {
   };
 
   return (
-    <div className="h-[750px] w-full bg-white rounded-[38px]">
+    <div className="h-[750px] w-full bg-white">
       <div className="absolute top-4 left-7 text-xs font-bold z-50">
         {new Date().toLocaleTimeString([], {
           hour: "2-digit",
@@ -44,11 +44,11 @@ const MesProjets = () => {
       {isSort && (
         <div
           onClick={() => setSort(!isSort)}
-          className="bg-white bg-opacity-65 w-full top-[210px] px-1 py-[177px] absolute z-10 cursor-pointer rounded-b-[38px]"
+          className="bg-white bg-opacity-65 w-full top-[205px] px-1 py-[177px] absolute z-10 cursor-pointer rounded-b-[31px]"
         />
       )}
 
-      <div className="flex pt-12 gap-3 absolute w-full bg-white rounded-t-[38px] rounded-b-[20px] border-b-2">
+      <div className="flex pt-12 gap-3 absolute w-full bg-white rounded-t-[38px] rounded-b-[20px] shadow-custom">
         <div className="ps-[90px] font-extrabold text-sm">Mes Projets</div>
         <img
           src="/svg/down.svg"
@@ -226,7 +226,7 @@ const MesProjets = () => {
                     target="_blank"
                   >
                     <div className="ps-4 ms-2 py-[2px] mt-1 rounded-[5px] text-white text-[9px] font-semibold bg-[#1A98FF] cursor-pointer">
-                      Voir le projet ↗
+                      Voir le projet
                     </div>
                   </a>
                 </div>
@@ -267,7 +267,7 @@ const MesProjets = () => {
                 </p>
                 <a href="https://Phareaway.fun" target="_blank">
                   <div className="ps-4 ms-2 py-[2px] mt-1 rounded-[5px] text-white text-[9px] font-semibold bg-[#1A98FF] cursor-pointer">
-                    Voir le projet ↗
+                    Voir le projet
                   </div>
                 </a>
               </div>
@@ -307,7 +307,7 @@ const MesProjets = () => {
                   target="_blank"
                 >
                   <div className="ps-4 ms-2 py-[2px] mt-1 rounded-[5px] text-white text-[9px] font-semibold bg-[#1A98FF] cursor-pointer">
-                    Voir le projet ↗
+                    Voir le projet
                   </div>
                 </a>
               </div>
@@ -342,7 +342,7 @@ const MesProjets = () => {
                   target="_blank"
                 >
                   <div className="ps-4 ms-2 py-[2px] mt-1 rounded-[5px] text-white text-[9px] font-semibold bg-[#1A98FF] cursor-pointer">
-                    Voir le projet ↗
+                    Voir le projet
                   </div>
                 </a>
               </div>
