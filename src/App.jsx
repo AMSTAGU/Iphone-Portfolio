@@ -12,6 +12,10 @@ import AnimText from "./components/AnimText";
 function Model({ open, ...props }) {
   const group = useRef();
 
+  function getSpeed() {
+    return window.innerWidth < 500 ? 0.18 : 0.05;
+  }
+
   useFrame((state) => {
     const t = state.clock.getElapsedTime();
     group.current.rotation.x = THREE.MathUtils.lerp(
@@ -49,7 +53,7 @@ function Model({ open, ...props }) {
         : open
         ? 11.7
         : (-2 + Math.sin(t)) / 3,
-      0.05
+      getSpeed()
     );
     group.current.position.x = THREE.MathUtils.lerp(
       group.current.position.x,
@@ -60,7 +64,7 @@ function Model({ open, ...props }) {
         : open
         ? -9.5
         : (-2 + Math.sin(t)) / 3,
-      0.05
+      getSpeed()
     );
   });
 

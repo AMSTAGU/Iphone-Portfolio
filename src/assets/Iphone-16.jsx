@@ -17,6 +17,15 @@ import Pacman from "../IphoneUI/Pacman";
 
 export function Iphone({ props, open }) {
   const { nodes, materials } = useGLTF("/models/iphone-16.glb");
+  function isMobile() {
+    return /iPhone|iPad|iPod|Android|webOS|BlackBerry|Windows Phone|Opera Mini|IEMobile/i.test(
+      navigator.userAgent
+    );
+  }
+
+  function getPos() {
+    return isMobile() ? [-0.4, 0.3, 0.7] : [0, 0, 0.7];
+  }
 
   return (
     <group {...props} dispose={null}>
@@ -115,14 +124,14 @@ export function Iphone({ props, open }) {
       />
       <mesh
         geometry={nodes.Object_18.geometry}
-        material={materials["4130c6244c49c5d5712e"]}
+        material={materials["5155c9eac3acd76d34a9"]}
       />
       <mesh
         geometry={nodes.Object_18.geometry}
         material={materials["4130c6244c49c5d5712e"]}
         scale={0.4}
       >
-        <Html position={[0, 0, 0.4]} transform>
+        <Html position={getPos()} transform>
           <div
             className={`rounded-[38px] h-[565px] w-[263px] overflow-y-auto scrollbar-none ${
               open ? "" : "select-none"
