@@ -116,17 +116,27 @@ export function Iphone({ props, open }) {
       <mesh
         geometry={nodes.Object_18.geometry}
         material={materials["4130c6244c49c5d5712e"]}
+      />
+      <mesh
+        geometry={nodes.Object_18.geometry}
+        material={materials["4130c6244c49c5d5712e"]}
+        scale={0.4}
       >
         <Html position={[0, 0, 0.4]} transform>
           <div
             className={`rounded-[38px] h-[565px] w-[263px] overflow-y-auto scrollbar-none ${
               open ? "" : "select-none"
             }`}
+            style={{
+              transform: "scale(2.52)",
+            }}
           >
             <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] rounded-[38px]" />
 
+            <div className="absolute left-[90px] top-3 bg-black py-[12px] px-[42px] rounded-2xl z-10 w-fit" />
+
             {!open && <div className="absolute w-full h-full z-50" />}
-            <div className="absolute items-center left-[90px] top-3 bg-black py-[12px] px-11 rounded-2xl z-10" />
+
             <Router>
               <Routes>
                 <Route path="/" element={<Home />} />

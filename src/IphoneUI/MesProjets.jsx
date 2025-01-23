@@ -21,7 +21,7 @@ const MesProjets = () => {
   };
 
   return (
-    <div className="h-[750px] w-full bg-white">
+    <div className="h-auto w-full min-h-[565px] bg-white">
       <div className="absolute top-4 left-7 text-xs font-bold z-50">
         {new Date().toLocaleTimeString([], {
           hour: "2-digit",
@@ -356,7 +356,7 @@ const MesProjets = () => {
         </div>
       )}
       <Link to="/">
-        <div className="absolute bg-gray-400 px-11 bottom-3 left-1/3 py-[3px] rounded-full z-10 cursor-pointer hover:scale-110 duration-300" />
+        <div className="sticky bg-gray-400 px-11 bottom-3 left-1/3 py-[3px] rounded-full z-10 cursor-pointer hover:scale-110 duration-300 w-fit" />
       </Link>
     </div>
   );
