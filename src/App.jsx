@@ -8,6 +8,7 @@ import { useSpring } from "@react-spring/core";
 import { a as three } from "@react-spring/three";
 import { Iphone } from "./assets/Iphone-16";
 import AnimText from "./components/AnimText";
+import LoadingScreen from "./components/LoadingScreen";
 
 function Model({ open, ...props }) {
   const group = useRef();
@@ -80,8 +81,11 @@ export default function App() {
   const [open, setOpen] = useState(false);
   const props = useSpring({ open: Number(open) });
 
+  const [started, setStarted] = useState(false);
+
   return (
     <main className="flex flex-row items-center">
+      <LoadingScreen started={started} setStarted={setStarted} />
       <div
         className="absolute inset-0 -z-10 h-full w-full bg-white 
     bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] 
@@ -93,7 +97,6 @@ export default function App() {
        bg-[radial-gradient(circle_400px_at_100%_500px,#ff7f50,transparent)]"
         ></div>
       </div>
-
       <div
         className={`flex flex-col justify-center text-zinc-700 font-bold font-outfit 
       lg:p-[6vw] sm:p-5 p-3 duration-500 lg:relative lg:top-0 top-8 absolute 
@@ -112,14 +115,16 @@ export default function App() {
           </span>
         </h2>
       </div>
-
       <div
         className={`absolute h-full w-full z-50 
       ${open ? "cursor-pointer" : "cursor-auto"}`}
         onClick={() => setOpen(false)}
       />
-
-      <div className={`absolute w-full h-full duration-150 top-0`}>
+      <div
+        className={`absolute w-full h-full top-0 duration-300 ${
+          started ? "opacity-100" : "opacity-0"
+        }`}
+      >
         <Canvas
           className={`h-full ${open ? "cursor-auto" : "cursor-pointer"}`}
           dpr={[1, 2]}
