@@ -356,7 +356,7 @@ const MesProjets = () => {
         </div>
       )}
       <Link to="/">
-        <div className="sticky bg-gray-400 px-11 bottom-3 left-1/3 py-[3px] rounded-full z-10 cursor-pointer hover:scale-110 duration-300 w-fit" />
+        <div className="sticky bottom-3 left-[90px] bg-gray-400 px-11 py-[3px] rounded-full z-10 w-fit" />
       </Link>
     </div>
   );
