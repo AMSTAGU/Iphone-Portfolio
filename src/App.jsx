@@ -7,7 +7,7 @@ import { Environment, ContactShadows } from "@react-three/drei";
 import { useSpring } from "@react-spring/core";
 import { a as three } from "@react-spring/three";
 import { Iphone } from "./assets/Iphone-16";
-import AnimText from "./components/AnimText";
+import AnimText from "./components/TextTyping/AnimText";
 import LoadingScreen from "./components/LoadingScreen";
 
 function Model({ open, ...props }) {
