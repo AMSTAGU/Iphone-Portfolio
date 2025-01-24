@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import Projets from "../components/Projets";
 
 const MesProjets = () => {
   const [isSort, setSort] = useState(false);
+  const [isFinished, setFinished] = useState(true);
   const [selectedTech, setSelectedTech] = useState([]); // Tableau pour stocker les technologies sélectionnées
 
   // Fonction pour ajouter une technologie au tableau, si elle n'est pas déjà présente
@@ -38,18 +40,24 @@ const MesProjets = () => {
 
       <div
         onClick={() => setSort(!isSort)}
-        className=" w-full px-1 py-12 absolute z-10 cursor-pointer"
+        className="w-full px-1 py-12 absolute cursor-pointer z-30"
       />
+
+      {/* truc dessus quand isSsort */}
 
       {isSort && (
         <div
           onClick={() => setSort(!isSort)}
-          className="bg-white bg-opacity-65 w-full top-[205px] px-1 py-[177px] absolute z-10 cursor-pointer rounded-b-[31px]"
+          className="absolute bg-white bg-opacity-65 w-full top-[170px] px-1 py-[197px] cursor-pointer z-10"
         />
       )}
 
-      <div className="flex pt-12 gap-3 absolute w-full bg-white rounded-t-[38px] rounded-b-[20px] shadow-custom">
-        <div className="ps-[90px] font-extrabold text-sm">Mes Projets</div>
+      {/* trucs en haut */}
+
+      <div className="flex pt-12 gap-3 absolute w-full rounded-t-[38px] rounded-b-[20px] shadow-custom bg-white  select-none z-20 bg-opacity-85 backdrop-blur-md">
+        <div className="ps-[90px] font-extrabold text-sm pointer-events-none">
+          Mes Projets
+        </div>
         <img
           src="/svg/down.svg"
           alt="down"
@@ -59,22 +67,20 @@ const MesProjets = () => {
           } `}
         />
         <div
-          className={`rounded-sm left-3 px-[120px] py-[0.5px] top-[80px] bg-slate-100 absolute duration-300
+          className={`rounded-sm left-3 px-[120px] py-[0.5px] top-[90px] bg-slate-100 absolute duration-500
             ${isSort ? "opacity-100" : "opacity-0"}`}
         />
-
         {isSort && (
           <div>
-            <div className="absolute text-xs font-semibold top-[90px] left-4">
-              Trier par :
-            </div>
-
             <motion.div
-              className="flex gap-2 absolute top-[120px] left-4 text-[9px] flex-wrap"
+              className="flex gap-[6px] absolute top-[125px] left-4 text-[9px] flex-wrap"
               initial={{ opacity: 0, y: -40 }} // Commence à être invisible et en haut
               animate={{ opacity: 1, y: 0 }} // Finit en étant visible et en position normale
-              transition={{ duration: 0.3 }} // Durée de l'animation
+              transition={{ duration: 0.22 }} // Durée de l'animation
             >
+              <div className="absolute text-xs font-semibold top-[-25px]">
+                Trier par :
+              </div>
               <div
                 className={`bg-[#F7DF1E] px-2 rounded-full py-[1px] cursor-pointer ${
                   selectedTech.length > 0 &&
@@ -201,163 +207,44 @@ const MesProjets = () => {
             </motion.div>
           </div>
         )}
-
-        <div className={`duration-200 ${isSort ? "pb-40" : "pb-11"}`} />
+        <div
+          className={`duration-200 z-20 ${isSort ? "pb-[155px]" : "pb-11"}`}
+        />
       </div>
 
-      <div className="pt-28">
-        {(selectedTech.length === 0 ||
-          selectedTech.includes("React") ||
-          selectedTech.includes("Three.js") ||
-          selectedTech.includes("JavaScript") ||
-          selectedTech.includes("TailwindCSS")) && (
-          <div>
-            <div className="mt-3 mx-3 rounded-xl px-3 py-3 bg-slate-100">
-              <div className="flex">
-                <img src="/img/Portfolio.png" alt="Portfolio" width={110} />
-                <div className="flex flex-col">
-                  <p className="text-[11px] font-semibold ps-2">Ce Portfolio</p>
-                  <p className="text-[6.6px] font-thin ps-2">
-                    Ce portfolio est développée avec React, Three.js et
-                    Tailwind, mettant en avant mes compétences et projets.
-                  </p>
-                  <a
-                    href="https://github.com/AMSTAGU/Iphone-Portfolio"
-                    target="_blank"
-                  >
-                    <div className="ps-4 ms-2 py-[2px] mt-1 rounded-[5px] text-white text-[9px] font-semibold bg-[#1A98FF] cursor-pointer">
-                      Voir le projet
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="flex mb-10 font-semibold text-[7px] gap-1 ms-[15px] mt-1">
-              <div className="bg-[#09D9FE] text-white px-2 rounded-full py-[1px]">
-                React
-              </div>
-              <div className="bg-[#000] text-white px-1 rounded-full py-[1px]">
-                Three.js
-              </div>
-              <div className="bg-[#F7DF1E] px-2 rounded-full py-[1px]">
-                JavaScript
-              </div>
-              <div className="bg-[#38BDF8] px-2 rounded-full py-[1px] text-white">
-                TailwindCSS
-              </div>
-            </div>
-          </div>
-        )}
-      </div>
-      {(selectedTech.length === 0 ||
-        selectedTech.includes("React") ||
-        selectedTech.includes("PostgresSQL") ||
-        selectedTech.includes("JavaScript") ||
-        selectedTech.includes("TailwindCSS")) && (
-        <div>
-          <div className="mt-2 mx-3 rounded-xl px-3 py-3 bg-slate-100">
-            <div className="flex">
-              <img src="/img/Phareaway.png" alt="Phareaway" width={110} />
-              <div className="flex flex-col">
-                <p className="text-[11px] font-semibold ps-2">Phareaway.fun</p>
-                <p className="text-[6px] font-thin ps-2">
-                  Pharaway est un site web visant à mettre en valeur les
-                  patrimoines culturels francais à traveres des énigmes
-                  ludiques.
-                </p>
-                <a href="https://Phareaway.fun" target="_blank">
-                  <div className="ps-4 ms-2 py-[2px] mt-1 rounded-[5px] text-white text-[9px] font-semibold bg-[#1A98FF] cursor-pointer">
-                    Voir le projet
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="flex mb-10 font-semibold text-[7px] gap-1 ms-[15px] mt-1">
-            <div className="bg-[#336791] px-2 rounded-full py-[1px] text-white">
-              PostgresSQL
-            </div>
-            <div className="bg-[#09D9FE] text-white px-2 rounded-full py-[1px]">
-              React
-            </div>
-            <div className="bg-[#F7DF1E] px-2 rounded-full py-[1px]">
-              JavaScript
-            </div>
-            <div className="bg-[#38BDF8] px-2 rounded-full py-[1px] text-white">
-              TailwindCSS
-            </div>
-          </div>
-        </div>
-      )}
-      {(selectedTech.length === 0 ||
-        selectedTech.includes("Java") ||
-        selectedTech.includes("CSS")) && (
-        <div>
-          <div className="mt-2 mx-3 rounded-xl px-3 py-3 bg-slate-100">
-            <div className="flex">
-              <img src="/img/StudLife.png" alt="Portfolio" width={110} />
-              <div className="flex flex-col">
-                <p className="text-[11px] font-semibold ps-2">Stud’Life</p>
-                <p className="text-[6.7px] font-thin ps-2">
-                  Stud’Life est une application dédiée à la création
-                  d’événements, conçue pour simplifier la gestion des BDE.
-                </p>
-                <a
-                  href="https://github.com/AMSTAGU/MEGA-SAE-20-1256"
-                  target="_blank"
-                >
-                  <div className="ps-4 ms-2 py-[2px] mt-1 rounded-[5px] text-white text-[9px] font-semibold bg-[#1A98FF] cursor-pointer">
-                    Voir le projet
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="flex mb-10 font-semibold text-[7px] gap-1 ms-[15px] mt-1">
-            <div className="bg-[#EA2D2E] px-2 rounded-full py-[1px] text-white">
-              Java
-            </div>
-            <div className="bg-[#264DE4] text-white px-1 rounded-full py-[1px]">
-              CSS
-            </div>
-          </div>
-        </div>
-      )}
+      {/* Projets */}
 
-      {(selectedTech.length === 0 || selectedTech.includes("PostgresSQL")) && (
-        <div>
-          <div className="mt-2 mx-3 rounded-xl px-3 py-3 bg-slate-100">
-            <div className="flex">
-              <img src="/img/NutriBD.png" alt="Nutri" width={110} />
-              <div className="flex flex-col">
-                <p className="text-[10px] font-semibold ps-2">
-                  Nutriscore Database Analysis
-                </p>
-                <p className="text-[6.7px] font-thin ps-2">
-                  Ce projet analyse une base de données de milliers de produits
-                  classés par Nutri-Score, origine, et catégorie...
-                </p>
-                <a
-                  href="https://github.com/Nereoll/Nutriscore-database-analysis"
-                  target="_blank"
-                >
-                  <div className="ps-4 ms-2 py-[2px] mt-1 rounded-[5px] text-white text-[9px] font-semibold bg-[#1A98FF] cursor-pointer">
-                    Voir le projet
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="flex mb-10 font-semibold text-[7px] gap-1 ms-[15px] mt-1">
-            <div className="bg-[#336791] px-2 rounded-full py-[1px] text-white">
-              PostgresSQL
-            </div>
-          </div>
+      <div className="absolute top-[91px] left-0 w-full h-[473.3px] overflow-auto scrollbar-none z-0">
+        <Projets isFinished={isFinished} selectedTech={selectedTech} />
+      </div>
+
+      {/* Truc en bas */}
+
+      <div className="absolute bottom-0 w-full h-[70px] bg-white border-t-[1px] border-black border-opacity-[8%] bg-opacity-85 backdrop-blur-md">
+        <div className="flex justify-center gap-[80px] text-[10px] font-semibold mt-3 cursor-pointer select-none">
+          <p
+            onClick={() => setFinished(true)}
+            className={`${!isFinished && "opacity-35"}`}
+          >
+            Terminés
+          </p>
+          <p
+            onClick={() => setFinished(false)}
+            className={`${isFinished && "opacity-35"}`}
+          >
+            En cours
+          </p>
         </div>
-      )}
-      <Link to="/">
-        <div className="sticky bottom-3 left-[90px] bg-gray-400 px-11 py-[3px] rounded-full z-10 w-fit" />
-      </Link>
+        <div className="rounded-sm px-[20px] py-[0.5px] bg-black opacity-[8%] mt-1 w-4/5 ml-[25px]" />
+        <div
+          className={`rounded-sm px-[18px] py-[1px] bg-[#1A98FF] mt-[-1.5px] w-[10px] duration-200 ${
+            isFinished ? "ml-[52px]" : "ml-[177px]"
+          }`}
+        />
+        <Link to="/">
+          <div className="absolute bg-gray-400 px-11 bottom-3 left-1/3 py-[3px] rounded-full z-10 cursor-pointer hover:scale-110 duration-300" />
+        </Link>
+      </div>
     </div>
   );
 };

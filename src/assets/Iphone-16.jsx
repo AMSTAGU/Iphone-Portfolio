@@ -142,7 +142,7 @@ export function Iphone({ props, open }) {
           >
             <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] rounded-[38px]" />
 
-            <div className="absolute left-[90px] top-3 bg-black py-[12px] px-[42px] rounded-2xl z-10 w-fit" />
+            <div className="absolute left-[90px] top-3 bg-black py-[12px] px-[42px] rounded-2xl z-50 w-fit" />
 
             {!open && <div className="absolute w-full h-full z-50" />}
 
