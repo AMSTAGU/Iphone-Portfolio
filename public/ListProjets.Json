@@ -4,7 +4,7 @@
     "description": "Pharaway est un site web visant à mettre en valeur les patrimoines culturels francais à traveres des énigmes ludiques.",
     "image": "Phareaway.png",
     "lien": "https://phareaway.fun",
-    "tech": ["PostgresSQL", "React", "JavaScript", "TailwindCSS"],
+    "tech": ["PostgresSQL", "React", "JavaScript", "TailwindCSS", "Next.js"],
     "nbpersonnes": 6,
     "date": "Jan 2025",
     "termine": true
@@ -26,7 +26,7 @@
     "lien": "https://github.com/AMSTAGU/MEGA-SAE-20-1256",
     "tech": ["Java", "CSS"],
     "nbpersonnes": 6,
-    "date": "Mai 2023",
+    "date": "Mai 2024",
     "termine": true
   },
   "projet4": {
@@ -36,7 +36,7 @@
     "lien": "https://github.com/Nereoll/Nutriscore-database-analysis",
     "tech": ["PostgresSQL"],
     "nbpersonnes": 2,
-    "date": "Jan 2023",
+    "date": "Jan 2024",
     "termine": true
   }
 }

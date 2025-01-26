@@ -25,7 +25,7 @@ export default function Projets({ isFinished, selectedTech }) {
       Java: "bg-[#EA2D2E] text-white",
       Blender: "bg-[#EA7600] text-white",
       TailwindCSS: "bg-[#38BDF8] text-white",
-      Figma: "bg-[#23CC71] text-white",
+      "Next.js": "bg-[#000] text-white",
       "C++": "bg-[#659AD2] text-white",
       "Three.js": "bg-[#000] text-white",
       PHP: "bg-[#777BB3] text-white",

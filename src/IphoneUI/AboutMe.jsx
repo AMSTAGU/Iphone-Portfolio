@@ -56,6 +56,9 @@ const AboutMe = () => {
               <div className="bg-[#EA7600] text-white px-1 rounded-full py-[1px]">
                 Blender
               </div>
+              <div className="bg-[#000] text-white px-1 rounded-full py-[1px]">
+                Next.js
+              </div>
             </div>
             <div className="text-[8px] flex flex-row gap-[3px] font-medium">
               <div className="bg-[#38BDF8] px-1 rounded-full py-[1px] text-white">

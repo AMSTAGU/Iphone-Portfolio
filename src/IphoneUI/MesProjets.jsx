@@ -165,14 +165,14 @@ const MesProjets = () => {
                 TailwindCSS
               </div>
               <div
-                className={`bg-[#23CC71] text-white px-2 rounded-full py-[1px] cursor-pointer ${
-                  selectedTech.length > 0 && !selectedTech.includes("Figma")
+                className={`bg-[#000] text-white px-2 rounded-full py-[1px] cursor-pointer ${
+                  selectedTech.length > 0 && !selectedTech.includes("Next.js")
                     ? "opacity-20"
                     : ""
                 }`}
-                onClick={() => handleTechClick("Figma")}
+                onClick={() => handleTechClick("Next.js")}
               >
-                Figma
+                Next.js
               </div>
               <div
                 className={`bg-[#659AD2] text-white px-1 rounded-full py-[1px] cursor-pointer ${
