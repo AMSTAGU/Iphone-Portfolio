@@ -47,31 +47,39 @@ export default function Projets({ isFinished, selectedTech }) {
         // Mapper sur les projets filtrés
         .map(([key, projet]) => (
           <article key={key}>
-            <div className="mt-6 flex gap-2 text-[8px] ml-3">
+            <div className="mt-6 flex gap-2 ml-3">
               <img
                 className="rounded-full"
                 src="/img/Amaury.png"
                 alt="Amaury"
                 width={16}
               />
-              <div className="flex gap-[1px]">
-                <p className="mr-[2px] font-bold">Amaury</p>
-                <p className="opacity-35 font-light">@amaurygau</p>
-                <p className="opacity-35">·</p>
-                <p className="opacity-35 font-light">{projet.date}</p>
-                <p className="opacity-35 font-light">·</p>
-                <p className="opacity-35 pr-[3px] font-light">
-                  {projet.nbpersonnes}
-                </p>
-                <img
-                  src="/svg/people.svg"
-                  alt="people"
-                  width={8}
-                  className="mb-[4.5px] opacity-35"
-                />
+              <div className="flex gap-[1px] text-[8px]">
+                <p className="mr-[2px] font-bold text-[10px]">Amaury</p>
+                <div className="flex pt-[1.5spx]">
+                  <p className="opacity-35 font-light">@amaurygau</p>
+                  <p className="opacity-35">·</p>
+                  <p className="opacity-35 font-light">{projet.date}</p>
+                  <p className="opacity-35 font-light">·</p>
+                  <p className="opacity-35 pr-[3px] font-light">
+                    {projet.nbpersonnes}
+                  </p>
+                  <img
+                    src="/svg/people.svg"
+                    alt="people"
+                    width={8}
+                    className="mb-[4.5px] opacity-35"
+                  />
+                </div>
                 <a href={projet.lien} target="_blank">
-                  <div className="px-1 p-[2px] ms-4 mt-[1px] rounded-[5px] text-white text-[8px] font-medium bg-[#1A98FF] cursor-pointer">
-                    voir ↗
+                  <div className=" flex px-1 gap-[1px] p-[2px] ms-4 mt-[1px] rounded-[5px] text-white text-[8px] font-medium bg-[#1A98FF] cursor-pointer">
+                    <div>voir</div>
+                    <img
+                      src="/svg/Arrow-Top-Right.svg"
+                      alt="arrow"
+                      width={9}
+                      className="pt-[1px]"
+                    />
                   </div>
                 </a>
               </div>
@@ -79,12 +87,12 @@ export default function Projets({ isFinished, selectedTech }) {
 
             <div className="ml-[35px] mr-[30px]">
               {/* Nom du projet */}
-              <h2 className="text-[9px] font-bold mb-[2px] text-[#1A98FF]">
+              <h2 className="text-[11px] font-bold mb-[2px] text-[#1A98FF]">
                 @{projet.name}
               </h2>
 
               {/* Description */}
-              <p className="text-[9px] font-thin">{projet.description}</p>
+              <p className="text-[10px] font-light">{projet.description}</p>
 
               {/* Image */}
               <img

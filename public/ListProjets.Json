@@ -38,5 +38,15 @@
     "nbpersonnes": 2,
     "date": "Jan 2024",
     "termine": true
+  },
+  "projet5": {
+    "name": "Litz",
+    "description": "Litz est une application mobile conçue à des fins pédagogiques pour explorer les bases du développement mobile avec des technologies modernes. Les utilisateurs peuvent lister et noter leurs albums favoris, tandis qu’un algorithme les aide à découvrir de nouveaux albums.",
+    "image": "Litz.png",
+    "lien": "#",
+    "tech": ["React Native", "Next.js", "PostgresSQL"],
+    "nbpersonnes": 1,
+    "date": "Jan 2025",
+    "termine": false
   }
 }
