@@ -28,7 +28,7 @@ export default function LoadingScreen({ setStarted }) {
       <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]" />
       <div className="text-4xl md:text-9xl font-bold text-[#ff7f50] relative">
         <div
-          className="absolute font-outfit left-0 top-0  overflow-hidden truncate text-clip transition-all duration-500"
+          className="absolute py-2 font-outfit left-0 top-[-7.5px]  overflow-hidden truncate text-clip transition-all duration-500"
           style={{
             width: `${progress}%`,
           }}
