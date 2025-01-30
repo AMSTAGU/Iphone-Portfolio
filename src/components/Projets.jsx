@@ -120,7 +120,7 @@ export default function Projets({ isFinished, selectedTech }) {
           </article>
         ))}
       <div className="h-64 flex justify-center pt-[30%] opacity-30 text-[10px]">
-        Plus de projet arrivent bientot !
+        Plus de projets arrivent bientot !
       </div>
     </section>
   );

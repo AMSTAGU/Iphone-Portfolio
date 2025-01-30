@@ -1,7 +1,7 @@
 {
   "projet1": {
     "name": "Pharaway",
-    "description": "Pharaway est un site web visant à mettre en valeur les patrimoines culturels francais à traveres des énigmes ludiques.",
+    "description": "Pharaway est un site web visant à mettre en valeur les patrimoines culturels francais à travers des énigmes ludiques.",
     "image": "Phareaway.png",
     "lien": "https://phareaway.fun",
     "tech": ["PostgresSQL", "React", "JavaScript", "TailwindCSS", "Next.js"],
