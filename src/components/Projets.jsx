@@ -57,11 +57,11 @@ export default function Projets({ isFinished, selectedTech }) {
               />
               <div className="flex gap-[1px] text-[8px]">
                 <p className="mr-[2px] font-bold text-[10px]">Amaury</p>
-                <div className="flex pt-[1.5spx]">
+                <div className="flex pt-[1.5px]">
                   <p className="opacity-35 font-light">@amaurygau</p>
-                  <p className="opacity-35">·</p>
+                  <p className="opacity-35">&nbsp;·&nbsp;</p>
                   <p className="opacity-35 font-light">{projet.date}</p>
-                  <p className="opacity-35 font-light">·</p>
+                  <p className="opacity-35 font-light">&nbsp;·&nbsp;</p>
                   <p className="opacity-35 pr-[3px] font-light">
                     {projet.nbpersonnes}
                   </p>
