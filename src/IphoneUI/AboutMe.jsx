@@ -81,7 +81,7 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-        <div className="pt-2 text-[9.6px] font-bold ms-4">
+        <div className="pt-2 text-[9.6px] font-bold mx-4">
           Étudiant en 2ème année de BUT informatique à l&apos;IUT2 de
           <span className="text-[#30408D]"> Grenoble</span>
         </div>
