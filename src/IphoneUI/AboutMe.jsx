@@ -21,10 +21,10 @@ const AboutMe = () => {
       />
 
       <div className="flex flex-col gap-2">
-        <div className="font-extrabold text-xs ps-5">@AmauryGau</div>
-        <div className="flex flex-row gap-[10px] ps-2">
+        <div className="font-extrabold text-xs ps-7">@AmauryGau</div>
+        <div className="flex flex-row gap-[10px] ps-4">
           <img
-            className="rounded-[30px]  left-3"
+            className="rounded-[30px]"
             src="/img/Amaury.png"
             alt="Amaury"
             width={110}
@@ -81,18 +81,18 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-        <div className="pt-2 text-[9.6px] font-bold ps-3">
-          Étudiant en deuxième année de BUT informatique à l&apos;IUT2 de
+        <div className="pt-2 text-[9.6px] font-bold ms-4">
+          Étudiant en 2ème année de BUT informatique à l&apos;IUT2 de
           <span className="text-[#30408D]"> Grenoble</span>
         </div>
-        <div className="flex font-bold text-[10px] justify-center pt-1 gap-3">
+        <div className="flex font-bold text-[10px] justify-center pt-1 gap-2">
           <a href="/pdf/CV_Amaury_GAU.pdf" target="_blank">
-            <div className="bg-[#B0B0B0] px-3 py-1 rounded-lg bg-opacity-50 cursor-pointer">
+            <div className="bg-[#B0B0B0] px-3 py-1 rounded-lg bg-opacity-50 cursor-pointer hover:bg-[#BABABA] duration-300">
               Curriculum vitae
             </div>
           </a>
           <Link to="/Mail">
-            <div className="bg-[#1A98FF] px-8 py-1 text-white rounded-lg cursor-pointer">
+            <div className="bg-[#1A98FF] px-[32px] py-1 text-white rounded-lg cursor-pointer hover:bg-[#1A77F2] duration-300">
               Contacter
             </div>
           </Link>
@@ -107,7 +107,7 @@ const AboutMe = () => {
               alt="Resume"
               width={20}
               className={`duration-300 cursor-pointer ${
-                isResume ? "" : "opacity-25"
+                isResume ? "" : "opacity-25 hover:opacity-50"
               }`}
             />
           </div>
@@ -120,7 +120,7 @@ const AboutMe = () => {
               alt="Work"
               width={20}
               className={`duration-300 cursor-pointer ${
-                isResume ? "opacity-25" : ""
+                isResume ? "opacity-25 hover:opacity-50" : ""
               }`}
             />
           </div>
@@ -129,7 +129,7 @@ const AboutMe = () => {
               isResume ? "left-[65px]" : "left-[166px]"
             }`}
           />
-          <div className="absolute bg-black px-28 mt-7 py-[0.8px] opacity-25" />
+          <div className="absolute bg-black px-[113px] mt-7 py-[0.8px] opacity-25" />
         </div>
         {isResume ? (
           <div className="px-4 pt-3 text-[10px] font-thin flex flex-col gap-2">
