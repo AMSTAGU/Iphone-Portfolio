@@ -6,12 +6,17 @@ const Google = () => {
 
   const handleKeyDown = (e) => {
     // Vérifie si la touche pressée est Entrée (keyCode 13)
-    if ((e.key === "Enter") & (query != "")) {
-      window.location.href = `https://www.google.com/search?q=${encodeURIComponent(
-        query
-      )}`;
+    if (e.key === "Enter" && query !== "") {
+      // Ouvre le lien dans un nouvel onglet
+      window.open(
+        `https://www.google.com/search?q=${encodeURIComponent(query)}`,
+        "_blank"
+      );
+      // Efface le texte dans la barre de recherche
+      setQuery("");
     }
   };
+
   return (
     <div className="h-full w-full bg-white rounded-[38px]">
       <div className="absolute top-4 left-7 text-xs font-bold z-50">
