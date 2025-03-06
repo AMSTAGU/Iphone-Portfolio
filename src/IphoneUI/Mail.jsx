@@ -4,6 +4,11 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Mail = () => {
   const [isSubmitted, setSubmitted] = useState(false);
+  const [email, setEmail] = useState("");
+  const [objet, setObjet] = useState("");
+  const [message, setMessage] = useState("\nEnvoyé depuis mon Iphone");
+  const isFormValid =
+    email.trim() !== "" && objet.trim() !== "" && message.trim() !== "";
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -102,7 +107,12 @@ const Mail = () => {
           <img
             src="/svg/Arrow-up.svg"
             alt="envoyer"
-            className="bg-[#1A98FF] rounded-full w-6 absolute top-[101px] right-4 cursor-pointer ring-[1px] ring-[#1A98FF] z-50 hover:scale-110 duration-300"
+            className={`rounded-full w-6 absolute top-[101px] right-4 cursor-pointer ring-[1px] z-50 
+              ${
+                isFormValid
+                  ? "bg-[#1A98FF] ring-[#1A98FF] hover:scale-110 duration-300"
+                  : "bg-[#C5C5C7] ring-[#C5C5C7] cursor-not-allowed"
+              }`}
           />
         </button>
         <div className="flex flex-col pt-36 ps-3 w-full">
@@ -115,6 +125,8 @@ const Mail = () => {
             <input
               type="email"
               name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               required
               className="font-medium px-1 focus:outline-none pr-14 w-4/5"
             />
@@ -125,14 +137,18 @@ const Mail = () => {
             <input
               type="text"
               name="Objet"
+              value={objet}
+              onChange={(e) => setObjet(e.target.value)}
               required
               className="font-medium px-1 focus:outline-none pr-10 w-4/5"
             />
-            <div className="absolute bg-black mt-7 px-[120px] py-[0.5px] opacity-10" />
+            <div className="absolute bg-black mt-7 px-[120px] py-[0.5px] opacity-25" />
           </div>
           <div className="mt-28 left-3 absolute text-xs font-light">
             <textarea
               name="Message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               defaultValue={`\nEnvoyé depuis mon Iphone`}
               className="w-60 h-60 resize-none focus:outline-none"
             />
