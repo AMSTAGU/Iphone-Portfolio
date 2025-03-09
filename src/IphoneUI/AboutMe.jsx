@@ -29,7 +29,7 @@ const AboutMe = () => {
             alt="Amaury"
             width={110}
           />
-          <div className="flex flex-col gap-[5px] pt-[12px]">
+          <div className="flex flex-col gap-[5px] pt-[3px]">
             <div className="text-[8px] flex flex-row gap-[3px] font-medium">
               <div className="bg-[#F7DF1E] px-1 rounded-full py-[1px]">
                 JavaScript
@@ -77,6 +77,11 @@ const AboutMe = () => {
               </div>
               <div className="bg-[#777BB3] text-white px-2 rounded-full py-[1px]">
                 PHP
+              </div>
+            </div>
+            <div className="text-[8px] flex flex-row gap-[2px] font-medium">
+              <div className="bg-[#4FB052] text-white px-1 rounded-full py-[1px]">
+                Android Studio
               </div>
             </div>
           </div>

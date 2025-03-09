@@ -54,7 +54,11 @@ const MesProjets = () => {
 
       {/* trucs en haut */}
 
-      <div className="flex pt-12 gap-3 absolute w-full rounded-t-[38px] rounded-b-[20px] shadow-custom bg-white  select-none z-20 bg-opacity-85 backdrop-blur-md">
+      <div
+        className={`flex pt-12 gap-3 absolute w-full rounded-t-[38px] rounded-b-[20px] shadow-custom bg-white  select-none z-20 bg-opacity-85 backdrop-blur-md ${
+          isSort ? "pb-3" : ""
+        }`}
+      >
         <div className="ps-[90px] font-extrabold text-sm pointer-events-none">
           Mes Projets
         </div>
@@ -203,6 +207,17 @@ const MesProjets = () => {
                 onClick={() => handleTechClick("PHP")}
               >
                 PHP
+              </div>
+              <div
+                className={`bg-[#4FB052] text-white px-2 rounded-full py-[1px] cursor-pointer ${
+                  selectedTech.length > 0 &&
+                  !selectedTech.includes("Android Studio")
+                    ? "opacity-20"
+                    : ""
+                }`}
+                onClick={() => handleTechClick("Android Studio")}
+              >
+                Android Studio
               </div>
             </motion.div>
           </div>

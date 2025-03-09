@@ -30,6 +30,7 @@ export default function Projets({ isFinished, selectedTech }) {
       "Three.js": "bg-[#000] text-white",
       PHP: "bg-[#777BB3] text-white",
       "React Native": "bg-[#09D9FE] text-white",
+      "Android Studio": "bg-[#4FB052] text-white",
     };
     return styles[tech] || "bg-gray-500 text-white"; // Default style if tech is not listed
   };

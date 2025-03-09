@@ -1,4 +1,14 @@
 {
+  "projet6": {
+    "name": "L'école des loustics",
+    "description": "L’École des Loustics est une application mobile entièrement conçue avec Android Studio (Java) pour des enfants d’école primaire. Elle permet de renforcer leurs compétences en mathématiques et en culture générale.",
+    "image": "Loustics.png",
+    "lien": "#",
+    "tech": ["Android Studio", "Java"],
+    "nbpersonnes": 1,
+    "date": "Mars 2025",
+    "termine": true
+  },
   "projet1": {
     "name": "Pharaway",
     "description": "Pharaway est un site web visant à mettre en valeur les patrimoines culturels francais à travers des énigmes ludiques.",
