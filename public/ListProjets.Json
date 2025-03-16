@@ -1,4 +1,14 @@
 {
+  "projet7": {
+    "name": "Grenoble Tram Calculator",
+    "description": "Grenoble Tram Calculator est une application web qui utilise l’API de la SMMAG pour afficher le décompte des deux prochains trams à prendre afin d’arriver à l’heure à sa destination.",
+    "image": "GTC.png",
+    "lien": "https://amstagu.github.io/r4a10-tp-api-2025-gaua/",
+    "tech": ["JavaScript", "TailwindCSS", "HTML"],
+    "nbpersonnes": 1,
+    "date": "Mars 2025",
+    "termine": false
+  },
   "projet6": {
     "name": "L'école des loustics",
     "description": "L’École des Loustics est une application mobile entièrement conçue avec Android Studio (Java) pour des enfants d’école primaire. Elle permet de renforcer leurs compétences en mathématiques et en culture générale.",
@@ -7,6 +17,16 @@
     "tech": ["Android Studio", "Java"],
     "nbpersonnes": 1,
     "date": "Mars 2025",
+    "termine": true
+  },
+  "projet2": {
+    "name": "Ce Portfolio",
+    "description": "Ce portfolio est un site web visant à mettre en valeur mes compétences et mes projets.",
+    "image": "Portfolio.png",
+    "lien": "https://github.com/AMSTAGU/Iphone-Portfolio",
+    "tech": ["React", "JavaScript", "TailwindCSS", "Three.js"],
+    "nbpersonnes": 1,
+    "date": "Jan 2025",
     "termine": true
   },
   "projet1": {
@@ -19,19 +39,9 @@
     "date": "Jan 2025",
     "termine": true
   },
-  "projet2": {
-    "name": "Ce Portfolio",
-    "description": "Ce portfolio est un site web visant à mettre en valeur mes compétences et mes projets.",
-    "image": "Portfolio.png",
-    "lien": "https://github.com/AMSTAGU/Iphone-Portfolio",
-    "tech": ["React", "JavaScript", "TailwindCSS", "Three.js"],
-    "nbpersonnes": 1,
-    "date": "Jan 2025",
-    "termine": false
-  },
   "projet3": {
     "name": "Stud’Life",
-    "description": "Stud’Life est une application dédiée à la création d’événements, conçue pour simplifier la gestion des BDE.",
+    "description": "Stud’Life est une application réalisée en JavaFX et dédiée à la création d’événements, conçue pour simplifier la gestion des BDE.",
     "image": "StudLife.png",
     "lien": "https://github.com/AMSTAGU/MEGA-SAE-20-1256",
     "tech": ["Java", "CSS"],
@@ -41,7 +51,7 @@
   },
   "projet4": {
     "name": "NutriBD",
-    "description": "Ce projet analyse une base de données de milliers de produits classés par Nutri-Score, origine, et catégorie...",
+    "description": "Ce projet universitaire à pour but d'analyser une base de données contenant de milliers de produits afin de les classer par Nutri-Score, origine, et catégorie...",
     "image": "NutriBD.png",
     "lien": "https://github.com/Nereoll/Nutriscore-database-analysis",
     "tech": ["PostgresSQL"],
