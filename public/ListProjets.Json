@@ -7,7 +7,7 @@
     "tech": ["JavaScript", "TailwindCSS", "HTML"],
     "nbpersonnes": 1,
     "date": "Mars 2025",
-    "termine": false
+    "termine": true
   },
   "projet6": {
     "name": "L'école des loustics",
