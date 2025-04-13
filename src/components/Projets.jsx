@@ -31,6 +31,8 @@ export default function Projets({ isFinished, selectedTech }) {
       PHP: "bg-[#777BB3] text-white",
       "React Native": "bg-[#09D9FE] text-white",
       "Android Studio": "bg-[#4FB052] text-white",
+      Symfony: "bg-[#000] text-white",
+      Docker: "bg-[#2496ED] text-white",
     };
     return styles[tech] || "bg-gray-500 text-white"; // Default style if tech is not listed
   };

@@ -219,6 +219,26 @@ const MesProjets = () => {
               >
                 Android Studio
               </div>
+              <div
+                className={`bg-[#000] text-white px-2 rounded-full py-[1px] cursor-pointer ${
+                  selectedTech.length > 0 && !selectedTech.includes("Symfony")
+                    ? "opacity-20"
+                    : ""
+                }`}
+                onClick={() => handleTechClick("Symfony")}
+              >
+                Symfony
+              </div>
+              <div
+                className={`bg-[#2496ED] text-white px-2 rounded-full py-[1px] cursor-pointer ${
+                  selectedTech.length > 0 && !selectedTech.includes("Docker")
+                    ? "opacity-20"
+                    : ""
+                }`}
+                onClick={() => handleTechClick("Docker")}
+              >
+                Docker
+              </div>
             </motion.div>
           </div>
         )}

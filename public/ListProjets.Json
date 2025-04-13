@@ -1,4 +1,14 @@
 {
+  "projet8": {
+    "name": "Mon Carnet de Stage",
+    "description": "Dans le cadre du 4eme semestre du BUT Informatique, ce projet vise à améliorer une application existante dédiée au suivi de la recherche de stage des étudiants. (Gestion de candidature, offres de stage, etc...). Il y a également une partie administration pour gérer les offres de stage et les utilisateurs.",
+    "image": "CarnetStage.png",
+    "lien": "https://github.com/hugo-brb/CarnetStage",
+    "tech": ["Android Studio", "Symfony", "PostgresSQL", "Docker"],
+    "nbpersonnes": 5,
+    "date": "Avril 2025",
+    "termine": true
+  },
   "projet7": {
     "name": "Grenoble Tram Calculator",
     "description": "Grenoble Tram Calculator est une application web qui utilise l’API de la SMMAG pour afficher le décompte des deux prochains trams à prendre afin d’arriver à l’heure à sa destination.",

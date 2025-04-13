@@ -53,11 +53,11 @@ const AboutMe = () => {
               <div className="bg-[#EA2D2E] px-1 rounded-full py-[1px] text-white">
                 Java
               </div>
-              <div className="bg-[#EA7600] text-white px-1 rounded-full py-[1px]">
-                Blender
+              <div className="bg-[#000000] text-white px-1 rounded-full py-[1px]">
+                Symfony
               </div>
-              <div className="bg-[#000] text-white px-1 rounded-full py-[1px]">
-                Next.js
+              <div className="bg-[#2496ED] text-white px-1 rounded-full py-[1px]">
+                Docker
               </div>
             </div>
             <div className="text-[8px] flex flex-row gap-[3px] font-medium">
@@ -69,11 +69,11 @@ const AboutMe = () => {
               </div>
             </div>
             <div className="text-[8px] flex flex-row gap-[2px] font-medium">
-              <div className="bg-[#659AD2] text-white px-1 rounded-full py-[1px]">
-                C++
-              </div>
               <div className="bg-[#000] px-1 rounded-full py-[1px] text-white">
                 Three.js
+              </div>
+              <div className="bg-[#659AD2] text-white px-1 rounded-full py-[1px]">
+                C++
               </div>
               <div className="bg-[#777BB3] text-white px-2 rounded-full py-[1px]">
                 PHP
@@ -82,6 +82,9 @@ const AboutMe = () => {
             <div className="text-[8px] flex flex-row gap-[2px] font-medium">
               <div className="bg-[#4FB052] text-white px-1 rounded-full py-[1px]">
                 Android Studio
+              </div>
+              <div className="bg-[#000] text-white px-1 rounded-full py-[1px]">
+                Next.js
               </div>
             </div>
           </div>
